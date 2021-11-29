@@ -1,17 +1,28 @@
 .ranking-section {
-      display: inline-block;
-      width: 100%;
-     }
-     .ranking-section .card {
-       border: none;
-       width: 25%;
-       float: left;
-       padding: 0 10px;
-    }
-    .ranking-section .card:nth-child(-2n+4) {
-      clear: both;
-      page-break-after: always;
-    }
-    .card:nth-child(3n+4) {
-      clear: both;
-    }
+  display: inline-block;
+  width: 100%;
+}
+
+.ranking-section .card {
+  border: none;
+  width: 15%;
+  margin: 5px;
+}
+
+#i {
+  border-style: solid;
+  text-align: center;
+}
+p{
+  margin: 10px;
+}
+h5{
+  margin: 10px;
+}
+img{
+  width: 20%;
+}
+.grid-container {
+  display: flex;
+  justify-content: center;
+}

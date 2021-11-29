@@ -1,14 +1,47 @@
-<div class="elite-service-section ranking-section">
-    <div class="card m-b-20" *ngFor= "let x of sortedData">
-        <div class="card-body">
-            <p class="card-text">{{x.name}}</p>
-            <div class="single-chart">
-                  
+<div class=" ranking-section grid-container">
+    <div class="card ">
+        <div id=i>
+            <p>{{row1Data.name}}</p>
 
-                <img src="/Content/images/elite-service.png" class="elite-service-img" alt="elite Service">
-            </div>
-            <h5 class="card-title p-t-10">{{x.code}}</h5>
+            <img src={{row1Data.imagePath}} alt="">
+
+            <h5>{{row1Data.code}}</h5>
         </div>
     </div>
-     
+</div>
+
+<div class=" ranking-section grid-container">
+    <div class="card " *ngFor="let data of row2Data">
+        <div id=i>
+            <p class="card-text">{{data.name}}</p>
+
+            <img src={{data.imagePath}} alt="">
+
+            <h5>{{data.code}}</h5>
+        </div>
+    </div>
+</div>
+
+<div class=" ranking-section grid-container">
+    <div class="card " *ngFor="let data of row3Data">
+        <div id=i>
+            <p>{{data.name}}</p>
+
+            <img src={{data.imagePath}} alt="">
+
+            <h5>{{data.code}}</h5>
+        </div>
+    </div>
+</div>
+
+<div class=" ranking-section grid-container">
+    <div class="card " *ngFor="let data of row4Data">
+        <div id=i>
+            <p>{{data.name}}</p>
+
+            <img src={{data.imagePath}} alt="">
+
+            <h5>{{data.code}}</h5>
+        </div>
+    </div>
 </div>
